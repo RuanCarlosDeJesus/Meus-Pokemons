@@ -1,0 +1,125 @@
+body{
+    font-family: 'poppins', sans-serif;
+    max-width:  980px;
+    margin: 0 auto;
+    background: url("../imagens/mewtwo.jpg") no-repeat fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.modo-escuro {
+    background:url("../imagens/gengi.jpg") no-repeat fixed;
+    background-size: cover;
+    background-color: black;
+    color: antiquewhite;
+}
+.modo-escuro .cartao-pokemon{
+   background:linear-gradient(rgb(19, 10, 51), rgb(17, 6, 22))
+}
+header{
+  
+    display:flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+header .logo,
+header .imagem-botao{
+ width: 50px;
+}
+header #botao-alterar-tema{
+    background: none;
+    border:none;
+    cursor:pointer; 
+    transition: 0.2s ease-in-out;
+}
+header .logo:hover, 
+header .imagem-botao:hover,
+main .cartao-pokemon:hover
+{
+    transform:scale(1.08);
+    cursor: pointer;
+
+}
+main{
+    
+    padding:30px;
+
+}
+#list-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.cartao-pokemon{
+    background:linear-gradient(rgb(32, 0, 236), rgb(41, 36, 36));
+    color: #a8a8a8;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition:0.2s ease-in-out;
+}
+main .cartao-pokemon:hover{
+    background-color: rgb(107, 118, 122);
+     
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #a8a8a8;
+}
+
+.cartao-pokemon .informacoes{
+ display: flex;
+ justify-content: space-between;
+ border: 2px;
+ border-radius: 10px;
+}
+.cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+   main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+   } 
+   .cartao-pokemon .Tipos{
+    display: flex;
+    gap: 15px;
+   }
+   .cartao-pokemon .Tipo-grama,.Tipo-agua, .Tipo-fogo, .Tipo-veneno, .Tipo-fantasma, .Tipo-voador{
+    padding: 8px;
+    border-radius: 15px;
+   }
+.Tipo-grama{
+        background-color: rgb(75, 155, 75);
+   }
+   .Tipo-veneno{
+    background-color: blueviolet;
+   }
+   .Tipo-agua{
+    background-color: aqua;
+   }
+   .Tipo-fogo{
+    background-color:#f4a84d;
+   }
+
+   .Tipo-fantasma{
+    background-color:rgb(44, 86, 184);
+   }
+   .Tipo-voador{
+    background-color: bisque;
+   }
+   .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+   }
+
+    
+ 
